@@ -1,4 +1,4 @@
-# BetFlow: Real-time Sports Betting Analytics Platform
+# Real-time Sports Betting Analytics Platform
 
 ---
 
@@ -17,7 +17,7 @@ BetFlow is a modern data and analytics engineering platform designed for real-ti
 The platform processes both streaming data for immediate insights and historical data for pattern analysis, providing a complete solution for sports betting analytics.
 
 > For usage check [this](usage.md)  
-> For working and screenshots check [this](demo.md)
+
 
 # Architecture
 ## 1. Real-time pipeline
@@ -242,48 +242,13 @@ graph LR
 - Season-by-season comparisons
 
 --- 
+# Conclusion
 
-## What Makes BetFlow Different
 - **True Real-time Processing**: Leverages Apache Kafka and Spark Streaming for sub-second latency in odds movement analysis and game statistics
 - **Dual Pipeline Architecture**: Separate real-time and batch pipelines optimized for their specific use cases
 - **Advanced Analytics**: Combines game statistics, odds movements, weather impacts, and news sentiment for comprehensive betting insights
 - **Cost-effective Design**: Hybrid storage strategy using Apache Druid for real-time analytics and Snowflake for historical analysis
 - **Scalable Architecture**: Cloud-native design supporting multiple sports (NFL, NBA, NHL, NCAAF) and data sources
 
-[//]: # (### Challenges)
-
-[//]: # (Where do I start!!!  )
-
-[//]: # (Everything about this project was challenging. When I was in planning phase I gave proposal to AI and )
-
-[//]: # (asked the time and cost of this project. Guess what response I received, 3 months &#40;6 hrs/day&#41; and USD 600/month. According to the)
-
-[//]: # (same AI my current progress of one month is equivalent to 2 months. If we keep the challenges aside learning curve)
-
-[//]: # (is what motivated me. This is my first project with real-time architecture. Never used Kafka, spark streaming, )
-
-[//]: # (druid, dbt, snowflake, grafana before this. I was recommended by people to use services such as confluent, but)
-
-[//]: # (I chose the DevOps path of setting infrastructure manually. My thought process, for the first time I should try to do everything from ground zero.)
-
-[//]: # (I survived it, there is lot more to tell, but I would like to leave something for my articles too.)
-
-[//]: # ()
-[//]: # (*Here I am :&#41;*)
-
----
-
-> ### Ongoing and upcoming implementations
-> 1. dbt models, gold layer, and business logic implementation
-> 2. Batch grafana dashboard
-> 3. Unit and integration tests and corresponding workflows
-> 4. Ruff linting and type checking and corresponding workflows
-> 5. CI/CD for package `betflow` and corresponding docs
-> 6. Asynchronous Kafka orchestrator, one producer for all 
-> 7. Weather component in batch pipeline
-> 8. Processing DAGs and analytics for data published by Kafka streams
-> 9. News component in real-time and batch pipeline
-> 10. Series of medium articles (as couple articles won't suffice for this project)
 
 
-> NOTE: (*) means in progress. 
